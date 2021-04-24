@@ -1,4 +1,6 @@
-import { analysis } from '../client/js/analysisText'
+const jest = require('jest');
+import "regenerator-runtime/runtime";
+import { analysis } from '../src/client/js/analysisText'
 
 describe('Test: "analysis" should exist' , () => {
     test('It should be present!', async () => {
@@ -6,8 +8,11 @@ describe('Test: "analysis" should exist' , () => {
     });
 });
 
-describe('Test: "analysis" should be of the type function' , () => {
-    test('It should be a function', async () => {
-        expect(typeof analysis).toBe("function");
-    });
-});
+
+describe("Testing the submit functionality", () => {    
+    test("analysis() to be defined", () => {
+        expect(analysis).toBeDefined();
+    })
+})
+
+  

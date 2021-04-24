@@ -17,7 +17,7 @@ const analysis = async () => {
         },
         body: JSON.stringify({data:url})
         })
-        
+        .then(result => result.json())
         .then((data) => {
             console.log(data)
             return viewData(data)

@@ -25,6 +25,5 @@ function checkUrl(str) {
   return !!pattern.test(str)
 }
 export{
-    
     checkUrl
 }

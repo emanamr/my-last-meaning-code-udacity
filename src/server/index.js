@@ -20,8 +20,9 @@ var axios = require('axios')
 const StandardURL = 'https://api.meaningcloud.com/sentiment-2.1'
 
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+//app.use(bodyParser.urlencoded({ extended: true }))
+//app.use(bodyParser.json())
+app.use(express.json({extended: false}))
 app.use(cors());
 app.use(express.static('dist'));
 
